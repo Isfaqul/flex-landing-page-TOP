@@ -180,3 +180,53 @@ nav li a {
 .article-info {
   font-size: 1.4rem;
 }
+
+/* Section 3 */
+
+.quote,
+.quote-author {
+  padding: 0 10em;
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.quote-author {
+  font-weight: 600;
+  text-align: right;
+  margin-top: 1em;
+}
+
+.cta-box {
+  background-color: #3b82f6;
+  padding: 3em 10em;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  align-items: center;
+  border-radius: 0.5em;
+}
+
+.cta-box h4 {
+  font-size: 2rem;
+}
+
+.cta-box p {
+  font-size: 1.5em;
+  opacity: 0.8;
+}
+
+.btn.sign-up-cta {
+  border: 2px solid white;
+}
+
+footer {
+  padding: 3em 0;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+}
