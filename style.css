@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+  --blue-gray: rgb(17, 41, 68);
   --main-font: "Montserrat", sans-serif;
 }
 
@@ -21,6 +22,10 @@ body {
   min-height: 100vh;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style: none;
 }
@@ -28,4 +33,173 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header,
+.hero,
+footer {
+  background-color: var(--blue-gray);
+  color: white;
+}
+
+.content-area {
+  max-width: 960px;
+  margin-inline: auto;
+}
+
+header {
+  padding-block: 2em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h2 {
+  font-size: 2.6rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 3em;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.flex-wrapper-hero {
+  padding-top: 5em;
+  padding-bottom: 8em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.hero-image-container {
+  border-radius: 0.8em;
+  overflow: hidden;
+  flex: 1;
+}
+
+.hero-text-container {
+  flex: 1;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h1 + p {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-block: 0.8em;
+}
+
+.cta-btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.9em 2em;
+  border-radius: 0.3em;
+  border: 2px solid transparent;
+  background-color: rgb(6, 124, 243);
+  color: white;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+
+.cta-section .cta-btn {
+  border: 2px solid white;
+}
+
+.article-section {
+  padding-block: 5em;
+  text-align: center;
+}
+
+.article-section h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+
+.article-container {
+  display: flex;
+  gap: 1em;
+}
+
+.article-container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.7em;
+}
+
+.article-image {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 1em;
+}
+
+.article-text {
+  font-size: 1.4rem;
+}
+
+.quote-section {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.quote-container {
+  padding: 4em 15em;
+}
+
+.quote-container q {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-style: italic;
+}
+
+.quote-container p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+  text-align: right;
+  margin-top: 1em;
+}
+
+.cta-box {
+  background-color: rgb(6, 124, 243);
+  color: white;
+  padding: 3em 5em;
+  margin-block: 4em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  border-radius: 1em;
+}
+
+.cta-box h3 {
+  font-size: 1.8rem;
+}
+
+.cta-box h3 + p {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer {
+  padding: 3em;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.6rem;
 }
